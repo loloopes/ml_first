@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def viewTest():
-    return HttpResponse('testing')
+def viewTest(request):
+    return render(request, 'file.html')

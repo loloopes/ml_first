@@ -21,5 +21,5 @@ from predictor.urls import urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    include(urlpatterns)
+    path('', include('predictor.urls'))
 ]
